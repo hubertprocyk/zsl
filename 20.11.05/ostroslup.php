@@ -29,8 +29,10 @@
       }
     } else {
       if(isset($_POST['a']) && isset($_POST['H'])){
-        if($_POST['a'] == 0 || $_POST['H'] == 0 ){
+        if($_POST['a'] === '0' || $_POST['H'] === '0' ){
           echo '<h4>Dane w formularzu nie mogą być 0!</h4>';
+        } else {
+          echo '<h4>Dane podane w formularzu muszą być liczbami dodatnimi!</h4>';
         }
       }
     }

@@ -25,14 +25,14 @@
         echo '<li>Pole: ',pole($_POST['a']),'cm<sup>2</sup></li>';
         echo '<li>Objętość: ',objetosc($_POST['a']),'cm<sup>3</sup></li>';
         echo '<li>Dlugosc przekatnej: ',przekatna($_POST['a']),'cm</li>';
-        echo '<li>Promień kuli wpisanej w sześcian: ',promienwpisany($_POST['a']),'cm</li>';
-        echo '<li>Promień kuli opisanej w sześcian: ',promienopisany($_POST['a']),'cm</li>';
         echo '</ul>';
       }
     } else {
       if(isset($_POST['a'])){
-        if($_POST['a'] == 0){
+        if($_POST['a'] === '0'){
           echo '<h4>Dane w formularzu nie mogą być 0!</h4>';
+        } else {
+          echo '<h4>Dane podane w formularzu muszą być liczbami dodatnimi!</h4>';
         }
       }
     }

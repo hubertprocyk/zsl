@@ -10,12 +10,4 @@ function objetosc($a){
 function przekatna($a){
   return round($a * sqrt(3), 2);
 }
-
-function promienwpisany($a){
-  return round($a / 2, 2);
-}
-
-function promienopisany($a){
-  return round($a * sqrt(3) / 2, 2);
-}
 ?>
